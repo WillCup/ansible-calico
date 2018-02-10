@@ -1,0 +1,9 @@
+---
+- name: Reload systemd
+  sudo: yes
+  command: systemctl daemon-reload
+  notify: Restart calico
+
+- name: Restart calico
+  service: name=calico.service state=restarted
+  sudo: yes

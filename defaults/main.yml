@@ -1,0 +1,4 @@
+---
+# defaults file for will.calico
+install_dir: /server/share/will/calico
+target_version: 1.6.3
